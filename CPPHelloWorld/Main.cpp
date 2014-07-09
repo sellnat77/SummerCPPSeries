@@ -23,7 +23,7 @@ int main()
 	apples += banana;
 
 	cout << apples << " apples.\n\n\n\n\n";
-	*/
+////////////////////////////////////////////////////////////////////////////////////////	
 
 	int apples;
 	int bananas;
@@ -42,6 +42,12 @@ int main()
 	cout << "The total number of apples and bananas you have are: ";
 	cout << total;
 	cout << "\n\n";
+////////////////////////////////////////////////////////////////////////////////////////
+	*/
+
+
+
+
 
 
 	return 0;
