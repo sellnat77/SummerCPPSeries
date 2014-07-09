@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -45,10 +46,11 @@ int main()
 ////////////////////////////////////////////////////////////////////////////////////////
 	*/
 
+	int apples;
 
+	apples = 9;
 
-
-
-
+	cout << sqrt(apples);
+	
 	return 0;
 }
