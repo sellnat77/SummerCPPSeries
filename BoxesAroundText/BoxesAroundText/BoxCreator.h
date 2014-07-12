@@ -59,6 +59,33 @@ public:
 
 		if (Row < 9)
 		{
+			Control.CenteredText(1, 9, "Increase the row by at least: ");
+			cout << 9 - Row;
+		}
+
+		if (Row > 8 && Row + Length + 1 < 45)
+		{
+			SetColor(Color);
+			SetPos(Col, Row);
+			cout << TopLeft;
+
+			SetPos(Col + Width + 1, Row);
+			cout << TopRight;
+			SetPos(Col, Row + Length + 1);
+			cout << BotLeft;
+			SetPos(Col + Width + 1, Row + Length + 1);
+			cout << BotRight;
+			SetPos(Col + HorizSpace + 1, Row + VertSpace + 1);
+			cout << Text;
+
+			for (k = 0; k < Length; k++)
+			{
+				SetPos(Col, Row + k + 1);
+				cout << Vert;
+
+				SetPos(Col + Width + 1, Row + Length + 1);
+				cout << Horiz;
+			}
 
 		}
 	}
