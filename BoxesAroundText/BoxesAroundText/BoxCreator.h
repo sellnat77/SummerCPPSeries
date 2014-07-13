@@ -1,8 +1,4 @@
-#include <iostream>
 #include "SystemCommands.h"
-#include "windows.h"
-
-using namespace std;
 
 class BoxCreator
 {
@@ -83,10 +79,25 @@ public:
 				SetPos(Col, Row + k + 1);
 				cout << Vert;
 
-				SetPos(Col + Width + 1, Row + Length + 1);
+				SetPos(Col + Width + 1, Row + k + 1);
+				cout << Vert;
+			}
+
+			for (k = 0; k < Width; k++)
+			{
+				SetPos(Col + k + 1, Row);
+				cout << Horiz;
+
+				SetPos(Col + k + 1, Row + Length + 1);
 				cout << Horiz;
 			}
 
-		}
+			if (Row + Length + 1 > 44)
+			{
+				Control.CenteredText(1, 9, "Decrease your row by at least: ");
+				cout << Row + Length + 1 - 44;
+
+			}
+		}	
 	}
 };

@@ -1,4 +1,7 @@
+#include <iostream>
 #include "windows.h"
+
+using namespace std;
 class SystemCommands
 {
 private:
@@ -16,6 +19,16 @@ public:
 		SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), Loc);
 	}
 
+	void AddLines(int NumOfLines)
+	{
+		int k;
+
+		for (k = 0; k < NumOfLines; k++)
+		{
+			cout << "\n";
+		}
+	}
+
 	void CenteredText(int Color, int Row, char *Text)
 	{
 		int LengthOfString;
@@ -27,6 +40,5 @@ public:
 		SetLoc(LengthOfString, Row);
 
 		cout << Text;
-
 	}
 };
