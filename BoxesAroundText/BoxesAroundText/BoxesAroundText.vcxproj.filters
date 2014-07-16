@@ -15,12 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BasicTextFuncs.h">
+    <ClInclude Include="SystemCommands.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxCreator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Hello.cpp">
+    <ClCompile Include="TextBoxes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,15 +1,11 @@
 #include "BasicTextFuncs.h"
 
-using namespace std;
-
 int main()
 {
-	BasicTextFuncs manip;
+	BasicTextFuncs Screen;
 
-	manip.Center("Hello World!");
+	Screen.Center("Hello World!");
 
-
-
-	cout << "\n\n\n\n";
 	return 0;
+
 }
