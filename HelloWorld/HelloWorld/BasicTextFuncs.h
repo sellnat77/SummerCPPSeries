@@ -6,11 +6,9 @@ using namespace std;
 
 class BasicTextFuncs
 {
-	
+	private:
 
-private:
-
-public:
+	public:
 	BasicTextFuncs(){}
 
 	void ClearScreen()
